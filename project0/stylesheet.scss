@@ -41,7 +41,7 @@ input[type="submit"] {
   padding: $padding_small;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-device-width: 1440px) {
   #container {
     max-width: 480px;
     margin: 0 auto 0 auto;
