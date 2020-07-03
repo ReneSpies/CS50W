@@ -1,4 +1,6 @@
-#content, nav {
+$padding_small: 5px;
+
+%auto-size {
   width: auto;
   height: auto;
 }
@@ -12,15 +14,18 @@ header {
 }
 
 nav {
+  @extend %auto-size;
   float: left;
   margin-right: 15px;
 }
 
-th td {
-  padding: 5px;
+th {
+  td {
+    padding: $padding_small;
+  }
 }
 
-input[type=submit] {
+input[type="submit"] {
   border-radius: 30px;
 }
 
@@ -33,7 +38,7 @@ input[type=submit] {
 }
 
 .radio-answer {
-  padding: 5px;
+  padding: $padding_small;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -42,14 +47,15 @@ input[type=submit] {
     margin: 0 auto 0 auto;
   }
 }
+
 @media only screen and (min-device-width: 481px) {
   #container {
     max-width: 1000px;
     margin: 0 auto 0 auto;
   }
 }
+
 #content {
+  @extend %auto-size;
   overflow: hidden;
 }
-
-/*# sourceMappingURL=stylesheet.css.map */

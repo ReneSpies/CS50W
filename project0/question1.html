@@ -2,30 +2,20 @@
 <html>
 
 <head>
-  <title>Question One</title>
+  <title>Who Wants to Be a Millionaire?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <div>
-    <table>
-      <tr>
-        <th>One</th>
-        <th>Two</th>
-        <th>Three</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr>
-    </table>
-  </div>
-  <div>
-    <nav>
+  <div id="container">
+    <header class="alert alert-success">
+      <h1>This is my Quiz about some paragraph.</h1>
+    </header>
+    <nav class="alert alert-primary">
       <ul>
-        <li>
-          <a href="index.html">Quiz paragraph</a></li>
-        <li>
+        <li><a href="index.html">Quiz paragraph</a></li>
+        <li class="current">
           Question One
         </li>
         <li>
@@ -39,6 +29,42 @@
         </li>
       </ul>
     </nav>
+    <div id="content">
+      <h3>Does this table hold correct information?</h3>
+      <table>
+          <thead>
+            <th>Name</th>
+            <th>Profession</th>
+            <th>Lifespan</th>
+          </thead>
+          <tbody class="second-row">
+            <td>Alexander the Great</td>
+            <td>Cook</td>
+            <td>356 BC - 323 BC</td>
+          </tbody>
+          <tbody>
+            <td>Donald Trump</td>
+            <td>Businessman, Entrepreneur, President</td>
+            <td>1946 - today</td>
+          </tbody>
+          <tbody class="second-row">
+            <td>Scrooge McDuck</td>
+            <td>Duck</td>
+            <td>Unknown</td>
+          </tbody>
+      </table>
+      <div class="radio-answer">
+        <input type="radio" name="answer" value="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" name="answer" value="No">
+        <label for="No">No</label>
+        <input type="radio" name="answer" value="Maybe">
+        <label for="Maybe">Maybe</label>
+        <form action="question2.html" method="post">
+          <input type="submit" value="Next question">
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 
