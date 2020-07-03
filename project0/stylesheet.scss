@@ -41,14 +41,14 @@ input[type="submit"] {
   padding: $padding_small;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 500px) {
   #container {
     max-width: 480px;
     margin: 0 auto 0 auto;
   }
 }
 
-@media only screen and (min-device-width: 481px) {
+@media only screen and (min-device-width: 501px) {
   #container {
     max-width: 1000px;
     margin: 0 auto 0 auto;
