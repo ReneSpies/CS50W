@@ -36,9 +36,9 @@ input[type=submit] {
   padding: 5px;
 }
 
-@media only screen and (max-device-width: 1440px) {
+@media only screen and (max-device-width: 768px) {
   #container {
-    max-width: 480px;
+    max-width: 100%;
     margin: 0 auto 0 auto;
   }
 }
