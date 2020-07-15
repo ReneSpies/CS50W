@@ -1,16 +1,30 @@
+.search input, .search button, .search a, #active-navigation {
+  border-radius: 50px;
+}
+
 .text-centered {
   text-align: center;
 }
 
 .search input {
-  border-radius: 50px;
+  margin-top: 1%;
 }
+
 .search button {
-  border-radius: 50px;
+  margin-top: 1%;
 }
 
-.rounded-borders {
-  border-radius: 50px;
+.search a {
+  margin-top: 1%;
 }
 
+.navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#navigation {
+  text-align: center;
+}
 /*# sourceMappingURL=stylesheet.css.map */
