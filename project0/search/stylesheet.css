@@ -1,0 +1,16 @@
+.text-centered {
+  text-align: center;
+}
+
+.search input {
+  border-radius: 50px;
+}
+.search button {
+  border-radius: 50px;
+}
+
+.rounded-borders {
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

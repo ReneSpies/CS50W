@@ -1,0 +1,47 @@
+$padding_small: 5px;
+
+%auto-size {
+  width: auto;
+  height: auto;
+}
+
+body {
+  background-color: #f2f1f0;
+}
+
+header {
+  margin-top: 5px;
+}
+
+nav {
+  @extend %auto-size;
+  float: left;
+  margin-right: 15px;
+}
+
+th {
+  td {
+    padding: $padding_small;
+  }
+}
+
+input[type="submit"] {
+  border-radius: 30px;
+}
+
+.second-row {
+  background-color: #fff;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.radio-answer {
+  padding: $padding_small;
+}
+
+#content {
+  @extend %auto-size;
+  overflow: hidden;
+}
