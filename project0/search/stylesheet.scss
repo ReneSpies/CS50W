@@ -7,18 +7,36 @@
 }
 
 .search {
+  margin-top: 1%;
   input {
-    margin-top: 1%;
     @extend %rounded-borders;
   }
 
   button {
-    margin-top: 1%;
     @extend %rounded-borders;
   }
   a {
-    margin-top: 1%;
     @extend %rounded-borders;
+  }
+}
+
+div.search{
+  justify-content: start center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 1%;
+  label {
+    text-align: right;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+  label:after {
+    content: '...';
+  }
+  input {
+    margin-top: .5%;
+    margin-bottom: .5%;
   }
 }
 .navigation {

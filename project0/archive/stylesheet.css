@@ -1,4 +1,4 @@
-#content, nav {
+nav, #content {
   width: auto;
   height: auto;
 }
@@ -20,7 +20,7 @@ th td {
   padding: 5px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border-radius: 30px;
 }
 
@@ -39,5 +39,4 @@ input[type=submit] {
 #content {
   overflow: hidden;
 }
-
 /*# sourceMappingURL=stylesheet.css.map */

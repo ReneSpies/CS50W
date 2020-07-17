@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Search</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
-  </head>
 
-  <body class="container-md">
-    <header>
-      <h1 class="text-centered">Search</h1>
-    </header>
-    <div id="navigation" class="text-centered">
-      <ul class="nav nav-pills navigation">
-        <li class="nav-item">
-          <a id="active-navigation" class="nav-link active">Search</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="image-search.html">Image Search</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="advanced-search.html">Advanced Search</a>
-        </li>
-      </ul>
-    </div>
-    <div class="text-centered search">
-      <form action="https://google.com/search">
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Search"
-            name="q"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Google Search</button>
-        <a class="btn btn-primary" href="https://google.com/doodles">I'm feeling lucky</a>
-      </form>
-    </div>
-  </body>
+<head>
+  <title>Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body class="container-md">
+  <header>
+    <h1 class="text-centered">Search</h1>
+  </header>
+  <div id="navigation" class="text-centered">
+    <ul class="nav nav-pills navigation">
+      <li class="nav-item">
+        <a id="active-navigation" class="nav-link active">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="image-search.html">Image Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="advanced-search.html">Advanced Search</a>
+      </li>
+    </ul>
+  </div>
+    <form action="https://google.com/search" class="text-centered search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="q" />
+      </div>
+      <button type="submit" class="btn btn-primary">Google Search</button>
+      <a class="btn btn-primary" href="https://google.com/doodles">I'm feeling lucky</a>
+    </form>
+</body>
+
 </html>

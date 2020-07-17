@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Advanced Search</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
-  </head>
 
-  <body class="container-md">
-    <header>
-      <h1 class="text-centered">Advanced Search</h1>
-    </header>
-    <div id="navigation" class="text-centered">
-      <ul class="nav nav-pills navigation">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Search</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="image-search.html">Image Search</a>
-        </li>
-        <li class="nav-item">
-          <a id="active-navigation" class="nav-link active">Advanced Search</a>
-        </li>
-      </ul>
+<head>
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body class="container-md">
+  <header>
+    <h1 class="text-centered">Advanced Search</h1>
+  </header>
+  <div id="navigation" class="text-centered">
+    <ul class="nav nav-pills navigation">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="image-search.html">Image Search</a>
+      </li>
+      <li class="nav-item">
+        <a id="active-navigation" class="nav-link active">Advanced Search</a>
+      </li>
+    </ul>
+  </div>
+  <form action="https://google.com/search" class="search text-centered">
+    <div class="form-group search">
+      <label for="as_q">Find pages with</label>
+      <input type="text" class="form-control" placeholder="all these words" name="as_q" />
+
+      <label for="as_epq">Find pages with</label>
+      <input type="text" class="form-control" placeholder="this exact word or phrase" name="as_epq" />
+
+      <label for="as_oq">Find pages with</label>
+      <input type="text" class="form-control" placeholder="any of these words" name="as_oq" />
+
+      <label for="as_eq">Find pages with</label>
+      <input type="text" class="form-control" placeholder="none of these words" name="as_eq" />
     </div>
-    <div class="text-centered">
-      <form action="https://google.com/search" class="search">
-        <div class="form-group">
-          <p style="text-align: start;">Find pages with...</p>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="all these words"
-            name="as_q"
-          /><input
-            type="text"
-            class="form-control"
-            placeholder="this exact word or phrase"
-            name="as_epq"
-          /><input
-            type="text"
-            class="form-control"
-            placeholder="any of these words"
-            name="as_oq"
-          /><input
-            type="text"
-            class="form-control"
-            placeholder="none of these words"
-            name="as_eq"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Google Search</button>
-      </form>
-    </div>
-  </body>
+    <button type="submit" class="btn btn-primary">Google Search</button>
+  </form>
+</body>
+
 </html>

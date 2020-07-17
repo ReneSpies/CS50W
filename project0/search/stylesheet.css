@@ -6,16 +6,38 @@
   text-align: center;
 }
 
-.search input {
+.search {
   margin-top: 1%;
 }
 
-.search button {
+div.search {
+  -webkit-box-pack: start center;
+      -ms-flex-pack: start center;
+          justify-content: start center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  grid-gap: 1%;
+}
+
+div.search label {
+  text-align: right;
+  margin-bottom: 1%;
   margin-top: 1%;
 }
 
-.search a {
-  margin-top: 1%;
+div.search label:after {
+  content: '...';
+}
+
+div.search input {
+  margin-top: .5%;
+  margin-bottom: .5%;
 }
 
 .navigation {
