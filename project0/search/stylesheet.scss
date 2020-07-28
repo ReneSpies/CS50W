@@ -20,7 +20,7 @@
   }
 }
 
-div.search{
+div.search {
   justify-content: start center;
   align-items: center;
   display: grid;
@@ -32,11 +32,11 @@ div.search{
     margin-top: 1%;
   }
   label:after {
-    content: '...';
+    content: "...";
   }
   input {
-    margin-top: .5%;
-    margin-bottom: .5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
   }
 }
 .navigation {
