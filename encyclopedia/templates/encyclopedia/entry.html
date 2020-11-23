@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+	{% if content is None %}
+		{% if title == "Already exists" %}
+			{{ title }}
+		{% else %}
+			Not found
+		{% endif %}
+	{% else %}
+		{{ title }}
+	{% endif %}
+{% endblock %}
+
+{% block body %}
+	{% if content is None %}
+		{% if title == "Already exists" %}
+			<h1>Error: Entry already exists</h1>
+		{% else %}
+			<h1>Error: Entry was not found</h1>
+		{% endif %}
+	{% else %}
+		{{ content | safe }}
+		<a href="{% url 'wiki:edit' title %}">Edit</a>
+	{% endif %}
+{% endblock %}
