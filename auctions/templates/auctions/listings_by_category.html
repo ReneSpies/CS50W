@@ -1,0 +1,30 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}
+	{% if error_message %}
+		{{ error_message }}
+	{% else %}
+		{{ category }}
+	{% endif %}
+{% endblock %}
+
+{% block body %}
+	{% if error_message %}
+		<h3>{{ error_message }}</h3>
+	{% else %}
+		{% for listing in listings %}
+			<h3>
+				<a href="{% url "auctions:listing" listing.id %}">{{ listing }}</a>
+			</h3>
+			<img src="{{ listing.image_url }}"
+				 alt="Unable to load photo."
+				 height="350">
+			<br>
+			<b>Description:</b>
+			<p>{{ listing.description }}</p>
+			<b>Current bid:</b>
+			<p>{{ listing.highest_bid }} €</p>
+			<hr>
+		{% endfor %}
+	{% endif %}
+{% endblock %}

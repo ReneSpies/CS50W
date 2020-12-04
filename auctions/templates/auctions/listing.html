@@ -1,0 +1,69 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}
+	{{ listing.title }}
+{% endblock %}
+
+{% block body %}
+	<div><h2>{{ listing.title }}</h2></div>
+	<div><h5>By {{ listing.owner }}</h5></div>
+	<div><p><img src="{{ listing.image_url }}"
+				 alt="No picture available"
+				 height="500"></p></div>
+	<b>Description:</b>
+	<p>{{ listing.description }}</p>
+	<b>Highest bid:</b>
+	<p>{{ listing.highest_bid }} €</p>
+	<b>Make a bid:</b>
+	{{ bidding_form.as_p }}
+	{% if user not in listing.watcher %}
+		<div></div>
+		<p>
+		<form name="add_to_watchlist_form"
+			  method="post"
+			  action="{% url "auctions:listing" listing.id %}">
+			{% csrf_token %}
+			<button name="add_to_watchlist_button"
+					type="submit"
+					class="btn btn-outline-primary">Add to watchlist
+			</button>
+		</form>
+		</p>
+		</div>
+	{% endif %}
+	{% if user == listing.owner %}
+		<div><p>
+			<form name="close_listing_form"
+				  action="{% url "auctions:listing" listing.id %}"
+				  method="post">
+				{% csrf_token %}
+				<button name="close_listing_button"
+						type="submit"
+						class="btn-outline-danger btn">Close listing
+				</button>
+			</form>
+			</p></div>
+	{% endif %}
+	<div><p>See if you won the auction</p></div>
+	<b>Comment as {{ user }}:</b><br>
+	<form name="post_comment_form"
+		  action="{% url "auctions:listing" listing.id %}"
+		  method="post">
+		{% csrf_token %}
+		{% csrf_token %}
+		{{ comment_form }}
+		<br>
+		<button name="post_comment_button"
+				class="btn btn-outline-primary"
+				type="submit">Post comment
+		</button>
+	</form>
+	<b>User say:</b><br>
+	{% for comment in comments %}
+		<b>{{ comment.commenter }}</b>
+		<p>{{ comment }}</p>
+		<hr>
+	{% empty %}
+		<i>...be the first to comment</i>
+	{% endfor %}
+{% endblock %}
