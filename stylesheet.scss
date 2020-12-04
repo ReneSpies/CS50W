@@ -1,0 +1,58 @@
+%rounded-borders {
+  border-radius: 50px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.search {
+  margin-top: 1%;
+
+  input {
+    @extend %rounded-borders;
+  }
+
+  button {
+    @extend %rounded-borders;
+  }
+
+  a {
+    @extend %rounded-borders;
+  }
+}
+
+div.search {
+  justify-content: start center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 1%;
+
+  label {
+    text-align: right;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+
+  label:after {
+    content: "...";
+  }
+
+  input {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+  }
+}
+
+.navigation {
+  display: inline-flex;
+}
+
+#active-navigation {
+  @extend %rounded-borders;
+}
+
+#navigation {
+  text-align: center;
+}

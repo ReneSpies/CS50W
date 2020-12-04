@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Advanced Search</title>
+		<link
+				crossorigin="anonymous"
+				href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+				integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+				rel="stylesheet"
+		/>
+		<link href="stylesheet.css"
+			  rel="stylesheet" />
+	</head>
+
+	<body class="container-md">
+		<header>
+			<h1 class="text-centered">Advanced Search</h1>
+		</header>
+		<div class="text-centered"
+			 id="navigation">
+			<ul class="nav nav-pills navigation">
+				<li class="nav-item">
+					<a class="nav-link"
+					   href="index.html">Search
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"
+					   href="image-search.html">Image Search
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active"
+					   id="active-navigation">Advanced Search
+					</a>
+				</li>
+			</ul>
+		</div>
+		<form action="https://google.com/search"
+			  class="search text-centered">
+			<div class="form-group search">
+				<label for="as_q">Find pages with</label>
+				<input
+						class="form-control"
+						name="as_q"
+						placeholder="all these words"
+						type="text"
+				/>
+
+				<label for="as_epq">Find pages with</label>
+				<input
+						class="form-control"
+						name="as_epq"
+						placeholder="this exact word or phrase"
+						type="text"
+				/>
+
+				<label for="as_oq">Find pages with</label>
+				<input
+						class="form-control"
+						name="as_oq"
+						placeholder="any of these words"
+						type="text"
+				/>
+
+				<label for="as_eq">Find pages with</label>
+				<input
+						class="form-control"
+						name="as_eq"
+						placeholder="none of these words"
+						type="text"
+				/>
+			</div>
+			<button class="btn btn-primary"
+					type="submit">Google Search
+			</button>
+		</form>
+	</body>
+</html>
